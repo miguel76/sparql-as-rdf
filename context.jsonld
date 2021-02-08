@@ -1,3 +1,12 @@
 {
-    
+    "spa": "https://w3id.org/sparql-algebra-ontology#",
+    "type": "@type",
+    "project": "spa:Project",
+    "bgp": "spa:BGP",
+    "input": "spa:subOp",
+    "patterns": "spa:tuple",
+    "pattern": "spa:TriplePattern",
+    "subject": "spa:subject",
+    "predicate": "spa:predicate",
+    "object": "spa:object"
 }
