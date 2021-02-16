@@ -6,14 +6,14 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
-      "/dist"
+    "/dist"
   ],
   "scripts": {
-      "build": "tsc",
-      "prepare": "npm run build",
-      "test": "jest --coverage"
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "jest --coverage"
   },
-"repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/miguel76/sparql-as-rdf.git"
   },
@@ -25,6 +25,8 @@
   "homepage": "https://github.com/miguel76/sparql-as-rdf#readme",
   "dependencies": {
     "jsonld": "^3.3.0",
+    "jsonld-context-parser": "^2.1.1",
+    "jsonld-streaming-serializer": "^1.2.0",
     "sparqlalgebrajs-input": "^2.4.0"
   },
   "devDependencies": {
