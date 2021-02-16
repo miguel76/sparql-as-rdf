@@ -1,12 +1,14 @@
 {
     "spa": "https://w3id.org/sparql-algebra-ontology#",
+    "sp": "http://spinrdf.org/sp#",
     "type": "@type",
     "project": "spa:Project",
     "bgp": "spa:BGP",
     "input": "spa:subOp",
     "patterns": "spa:tuple",
-    "pattern": "spa:TriplePattern",
-    "subject": "spa:subject",
-    "predicate": "spa:predicate",
-    "object": "spa:object"
+    "pattern": "sp:TriplePattern",
+    "subject": "sp:subject",
+    "predicate": "sp:predicate",
+    "object": "sp:object",
+    "graph": "spa:graphName"
 }

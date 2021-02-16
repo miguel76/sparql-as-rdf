@@ -19,7 +19,9 @@ export async function translateTerms(operation: Algebra.Operation): Promise<Alge
             console.log('term');
             return Util.termToValue(obj, ctxt);
         } 
-        return Object.fromEntries(Object.entries(obj).map(([k, v]) => [k, translateObj(v)]));
+        return Object.fromEntries(Object.entries(obj)
+                .filter(([k, v]) => k !== 'graph' || (<Term> v).termType !== 'DefaultGraph')
+                .map(([k, v]) => [k, translateObj(v)]));
     }
     return translateObj(operation);
 }
